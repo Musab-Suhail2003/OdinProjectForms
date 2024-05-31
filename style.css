@@ -1,0 +1,19 @@
+body{
+    size: 100%;
+}
+#background{
+    position: absolute;
+}
+form{
+    size: 50%;
+    position: relative;
+    left: 60%;
+    top: 20em;
+}
+form > div{
+    border: 4em;
+}
+form>div:nth-child(2){
+    position: relative;
+    border-width: 2em;
+}
