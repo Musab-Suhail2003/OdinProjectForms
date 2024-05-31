@@ -1,19 +1,31 @@
-body{
-    size: 100%;
-}
 #background{
     position: absolute;
 }
 form{
-    size: 50%;
+    height: 20em;
+    width: 43em;
+    overflow: hidden;
+    background-color: aqua;
     position: relative;
-    left: 60%;
+    left: 55%;
     top: 20em;
 }
-form > div{
-    border: 4em;
-}
-form>div:nth-child(2){
+form > *{
     position: relative;
-    border-width: 2em;
+    left: 1em;
+}
+form > div :nth-child(1n+3){
+    position: relative;
+    left: 4em;
+}
+div > input + input{
+    position: relative;
+    right: -5em;
+}
+[type='submit']{
+    position: relative;
+    top: 6em;
+}
+form > div > input{
+    border-radius: 5px;
 }
