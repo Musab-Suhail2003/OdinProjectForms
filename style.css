@@ -1,31 +1,106 @@
-#background{
-    position: absolute;
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+  }
+body{
+    margin: 0;
+    padding: 0;
+    --bodyheight: 100%*height;
+}
+h1{
+    position: fixed;
+    font-family: Norse-Bold;
+    font-size: 10em;
+    color: aliceblue;
+    position: fixed;
+
+    left: 1.5em;
+    z-index: 2;
+}
+
+#odin{
+    position: fixed;
+    z-index: 2;
+    left: 3%;
+    top: 10%;
 }
 form{
-    height: 20em;
-    width: 43em;
+    z-index: 3;
+    background-color: aliceblue;
+    height: 25em;
+    width: 70em;
     overflow: hidden;
-    background-color: aqua;
-    position: relative;
-    left: 55%;
+    position: absolute;
+    left: 40%;
     top: 20em;
+    box-shadow: 0 2% 3% 0 rgba(0,0,0,0.24), 0 3% 4% 0 rgba(0,0,0,0.24);
 }
 form > *{
+    margin: 0.5em;
     position: relative;
-    left: 1em;
+    font-size: 1.2em;
+    left: 12em;
+    top: 2em;
 }
-form > div :nth-child(1n+3){
+
+form > div:not(.selector) :nth-child(1n+3){
     position: relative;
-    left: 4em;
+    left: 2em;
 }
-div > input + input{
-    position: relative;
-    right: -5em;
-}
-[type='submit']{
-    position: relative;
-    top: 6em;
-}
-form > div > input{
+
+div:not(.selector) > input{
     border-radius: 5px;
+    width: 17em;
+    height: 2em;
+}
+input:valid{
+    border-color: #04AA6D;
+}
+input:invalid{
+    border-color: red;
+}
+input:checked{
+    border-color: blue;
+}
+
+#lname, #PHnum,  #Confirm_password{
+    position: relative;
+    left: 3em;
+}
+.selector{
+    position: relative;
+    left: 13.5em;
+    display: inline;
+    font-size: 1.2em;
+}
+.selector>input{
+
+    width: 4em;
+    height: 1.5em;
+}
+.Button{
+    margin-left: 10em;
+    position: relative;
+    top: 4em;
+    left: 10em;
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    border: none;
+    background-color: #04AA6D;
+    border-radius: 5px;
+    padding: 20px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: outset;
+    cursor: pointer;
+}
+.Button:hover{
+    box-shadow: 0 2% 3% 0 rgba(0,0,0,0.24), 0 3% 4% 0 rgba(0,0,0,0.24);
+}
+
+footer{
+    position: relative;
+    top: 20%;
 }
