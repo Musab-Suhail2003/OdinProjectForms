@@ -7,27 +7,42 @@ body{
     padding: 0;
     --bodyheight: 100%*height;
 }
-h1{
+#odin_name{
     position: fixed;
-    font-family: Norse-Bold;
-    font-size: 10em;
-    color: aliceblue;
-    position: fixed;
+    top: 5%;
+    background: rgba(0, 0, 0, .5);
+    height: 30%;
+    width: 40%;
 
-    left: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Norse-Bold;
+    font-size: 9em;
+    color: aliceblue;
     z-index: 2;
 }
 
 #odin{
-    position: fixed;
-    z-index: 2;
-    left: 3%;
-    top: 10%;
+    height: 1.6em;
+    width: 1.2em;
+}
+
+#description{
+    position: absolute;
+    font-family: Norse-Bold;
+    font-size: 2em;
+    top: 0.5em;
+    left: 45%;
+}
+#description > #heading{
+    color: red;
 }
 form{
     z-index: 3;
     background-color: aliceblue;
-    height: 25em;
+    height: 33em;
     width: 70em;
     overflow: hidden;
     position: absolute;
@@ -85,7 +100,7 @@ input:checked{
     left: 10em;
     display: inline-block;
     width: 20%;
-    height: 20%;
+    height: 15%;
     border: none;
     background-color: #04AA6D;
     border-radius: 5px;
@@ -103,4 +118,8 @@ input:checked{
 footer{
     position: relative;
     top: 20%;
+}
+a{
+    text-decoration: none;
+    color: #04AA6D;
 }
